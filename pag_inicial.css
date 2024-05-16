@@ -1,0 +1,20 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.navbar{
+    background-color: #293d80;
+    width: 100%;
+    height: 80pt;
+}
+
+.d-flex{
+    width: 100dp;
+    margin-left: 3.5%;
+}
+
+.navbar-nav li a{
+
+    color: rgb(250, 247, 247);
+}
