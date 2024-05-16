@@ -4,17 +4,45 @@
 }
 
 .navbar{
-    background-color: #293d80;
+    background-image: linear-gradient(60deg,#152d54,#345d9e);
     width: 100%;
     height: 80pt;
 }
+
+.navbar-nav a:hover{
+    color: #1cd84b;
+    font-size: 16pt;
+}
+
+.navbar-nav li a{
+    color: rgb(250, 247, 247);
+    font-size: 15pt;
+}
+
 
 .d-flex{
     width: 100dp;
     margin-left: 3.5%;
 }
 
-.navbar-nav li a{
+.d-flex button{
+     background-color: #23c23b;
+     color: white;
+}
 
-    color: rgb(250, 247, 247);
+.dropdown-menu a:hover{
+    background-color: #19335c;
+}
+
+.link_log{
+    float: right; 
+    margin-right: 5%; 
+    font-size: 15pt;
+    text-decoration: none;
+    color: white;
+}
+
+.link_log:hover{
+    color: #23c23b;
+    font-size: 16pt;
 }
