@@ -54,7 +54,7 @@ body {
     color: #1cd84b;
 }
 
-.login-container input[type="text"],
+.login-container input[type="email"],
 .login-container input[type="password"] {
     padding: 12px;
     border: 1px solid #ddd;
@@ -66,7 +66,7 @@ body {
     transition: border-color 0.3s;
 }
 
-.login-container input[type="text"]:focus,
+.login-container input[type="email"]:focus,
 .login-container input[type="password"]:focus {
     border-color: #80bdff;
     outline: none;
