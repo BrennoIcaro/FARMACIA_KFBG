@@ -19,7 +19,7 @@ mysqli_close($conn);
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="5;http://localhost/FARMACIA_KFBG">
+    <meta http-equiv="refresh" content="5;http://localhost/FARMACIA_KFBG/login.html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="">
     <title>Confirmação de Cadastro</title>
