@@ -61,23 +61,19 @@
     margin-left: 1%;
 }
 
-.icones_banner{
-    background-image: linear-gradient(60deg,#152d54,#345d9e);
-    width: 80%;
-    height: 54pt;
-    display: flex;
-    margin: 2% 0% 0% 8%;
-    border-radius: 20px;
+@media (max-width: 524px) {
+    .image-container {
+        margin-left: 8%;
+    }
+
+    .image-container img {
+        width: 14%;
+        margin-left: -1%;
+    }
 }
 
-.icones_banner img{
-    height: auto;
-    display: flex;
-    width: 68px;
-    margin-left: 70pt;
-}
-
-.icones_banner p{
-    color: white;
-    margin: 0.6% 0% 0% 1%;
-}
+@media (max-width: 524px) {
+    .carousel-inner img{
+        height: 120pt;
+    }
+ }
