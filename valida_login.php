@@ -2,18 +2,18 @@
 
 include("conexao.php");
 
-if(isset($_POST['username']) && isset($_POST['senha'])) {
+if(isset($_POST['email']) && isset($_POST['senha'])) {
 
-    $username = $_POST['username'];
+    $email = $_POST['email'];
     $senha = $_POST['senha'];
 
-    $sql = "SELECT * FROM clientes WHERE username='$username' AND senha='$senha'";
+    $sql = "SELECT * FROM clientes WHERE email='$email' AND senha='$senha'";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
         echo "<script>alert('Login validado');</script>";
     } else {
-        echo "<script>alert('Usuário ou senha incorretos. Tente novamente.');</script>";
+        echo "<script>alert('Email ou senha incorretos. Tente novamente.');</script>";
         header("Location: ");
 
     }
