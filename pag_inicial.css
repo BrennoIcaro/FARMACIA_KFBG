@@ -76,6 +76,7 @@
     .carousel-inner img{
         height: 120pt;
     }
+
  }
 
  .image-container2{
@@ -111,3 +112,13 @@
 .card:hover {
     transform: scale(1.05);
 }
+
+@media (max-width: 640px) {
+    .image-container2 p{
+        font-size: 8pt;
+    }
+
+    .image-container2 img{
+        margin-left: 10pt;
+    }
+ }
