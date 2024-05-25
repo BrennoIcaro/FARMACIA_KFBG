@@ -122,3 +122,48 @@
         margin-left: 10pt;
     }
  }
+
+ footer{
+    background-color: #19335c;
+    height: 90pt;
+    margin-top: 1%;
+ }
+
+ footer svg{
+    color: white;
+    width: 25pt;
+    height: auto;
+    margin: 1.8% 0% 0% 3%;
+ }
+
+ .tel p{
+    color: white; 
+    margin-left: 80%; 
+    margin-top: -5.5%; 
+    font-size: 15pt;
+ }
+
+ footer .aqui p{
+    margin-top: -10pt;
+    color: white;
+ }
+
+ @media (max-width: 800px) {
+    footer p{
+        font-size: 8pt;
+    }
+
+    footer svg{
+        width: 15pt;
+        margin-top: 5%;
+    }
+
+    .tel p{
+
+        margin-top: -55pt;
+        font-size: 10pt;
+        margin-left: 60%;
+    }
+ }
+
+
