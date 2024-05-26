@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Imagens</title>
+</head>
+<body>
+   <div>
+    <form action="./upload.php" method="post" enctype="multipart/form-data">
+        <div>
+            <label>Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Nome do Remédio">
+        </div>
+
+        <br>
+
+        <div>
+            <label>Fabricante:</label>
+            <input type="text" id="fabricante" name="fabricante" placeholder="Nome do Fabricante">
+        </div>
+
+        <br>
+
+        <div>
+            <label>Descrição::</label>
+            <input type="text" id="descricao" name="descricao" placeholder="Descrição">
+        </div>
+
+        <br>
+
+        <div>
+            <label>Data de Fabricação:</label>
+            <input type="datetime" name="data_fabricacao" id="data_fabricacao" placeholder="Data de fabricação">
+        </div>
+
+        <br>
+
+        <div>
+            <label>Data de Validade:</label>
+            <input type="datetime" name="data_validade" id="data_validade" placeholder="Data de Validade">
+        </div>
+
+        <br>
+
+        <div>
+            <label>Selecione a imagem</label>
+            <br>
+            <input type="file" name="imagem" accept="image/*">
+            <br>
+            <br>
+            <button type="submit" class="bt_enviar">Enviar imagem</button>
+        </div>
+        
+    </form>
+   </div>
+</body>
+</html>
