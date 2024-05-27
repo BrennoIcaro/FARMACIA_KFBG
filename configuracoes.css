@@ -1,5 +1,149 @@
-.d-inline-flex button{
-
-    width: 100%;
-    background-color: gray;
+*{
+    padding: 0%;
+    margin: 0%;
 }
+
+body{
+    background-image: linear-gradient(99deg,#152d54,#345d9e,#23c23b);
+}
+
+.navbar-brand img{
+    margin: -3% 0% 0% 2%;
+}
+
+.link_log2 svg{
+    width: 11%;
+    height: 11%;
+    margin: 2.5% 0% 0% 33%;
+    color: white;
+}
+
+.link_log3{
+    margin-left: 26%;
+}
+
+.link_log3 svg{
+    width: 28pt;
+    height: 28pt;
+    margin: -4% 0% 0% 2%;
+}
+
+@media (max-width: 1396px) {
+    .link_log2 svg{
+         font-size: 8pt;
+         margin-left: 25%;
+    }
+
+    .link_log3{
+        margin-left: 17%;
+    }
+
+    .navbar-brand img{
+        margin-left: -3%;
+    }
+ }
+
+ @media (max-width: 976px) {
+    .link_log2 svg{
+         font-size: 10pt;
+         margin-left: 20%;
+    }
+
+    .link_log3{
+        margin-left: 17%;
+    }
+
+    .navbar-brand img{
+
+        margin-top: 1%;
+        margin-left: -9%;
+    }
+
+    .link_log3 svg{
+        width: 25pt;
+        height: 25pt;
+    }
+ }
+
+ @media (max-width: 616px) {
+    .link_log2 svg{
+         font-size: 10pt;
+         margin-left: 18%;
+    }
+
+    .link_log3{
+        margin-left: 10%;
+    }
+
+    .navbar-brand img{
+        margin-top: 1%;
+        margin-left: 5%;
+        width: 80pt;
+        height: 35pt;
+    }
+
+    .link_log3 svg{
+        width: 20pt;
+        height: 20pt;
+    }
+ }
+
+ .nav {
+    margin-top: 3%;
+ }
+
+ .nav button{
+    color: white;
+ }
+
+ .nav button:hover{
+    color: white;
+    background-color: #23c23b;
+ }
+
+ .tab-content h2{
+    color: white;
+    text-align: center;
+    margin-top: 3%;
+ }
+
+ .campo1,.campo2{
+    color: white;
+    text-align: center;
+    margin-top: 1.5%;
+ }
+
+ .campo1 .campo2 ,strong{
+    font-size: 15pt;
+ }
+
+ .campo1 .campo2 ,input{
+    margin-top: 1%;
+    width: 200pt;
+    height: 27pt;
+ }
+
+ .excluir button{
+    background-color: #b82116;
+    color: white;
+    border-radius: 10px;
+    width: 95pt;
+    height: 35pt;
+    margin-top: 2%;
+ }
+
+.excluir button:hover{
+    transform: scale(0.95);
+    background-color: #881a12;
+}
+
+@media (max-width: 900px) {
+    .tab-content h2{
+
+    margin-top: 12%;
+
+   }
+    .campo1{
+        margin-top: 14%;
+    }
+ }
