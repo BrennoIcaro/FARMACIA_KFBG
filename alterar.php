@@ -22,6 +22,7 @@ $alterar_cliente = mysqli_query($conn, $alterar_user);
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="3;http://localhost/FARMACIA_KFBG/configuracoes.html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alterando Usuário</title>
 </head>
