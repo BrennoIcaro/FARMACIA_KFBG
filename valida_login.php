@@ -25,7 +25,7 @@ $conn->close();
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="refresh" content="3;http://localhost/FARMACIA_KFBG/pagina_logado.html">

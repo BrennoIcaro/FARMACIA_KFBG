@@ -7,6 +7,7 @@ $fabricante = $_POST['fabricante'];
 $descricao = $_POST['descricao'];
 $data_fabricacao = $_POST['data_fabricacao'];
 $data_validade = $_POST['data_validade'];
+$preco = $_POST['preco'];
 
 
 if(isset($_FILES["imagem"]) && !empty($_FILES["imagem"])){
@@ -17,8 +18,9 @@ if(isset($_FILES["imagem"]) && !empty($_FILES["imagem"])){
     echo "";
 }
 
-$sql = "INSERT INTO remedios (nome,fabricante,descricao,data_fabricacao,data_validade,imagem)
- VALUES ('{$nome}','{$fabricante}','{$descricao}','{$data_fabricacao}','{$data_validade}','{$imagem}')";
+$sql = "INSERT INTO remedios (nome,fabricante,descricao,data_fabricacao,data_validade,imagem,preco)
+ VALUES ('{$nome}','{$fabricante}','{$descricao}','{$data_fabricacao}','{$data_validade}','{$imagem}','{$preco}')";
+
 
 mysqli_query($conn,$sql) or die("Erro ao inserir remedio!");
 mysqli_close($conn);
