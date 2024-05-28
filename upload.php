@@ -23,7 +23,7 @@ if ($tipo == 'remedio') {
             VALUES ('{$nome}', '{$fabricante}', '{$descricao}', '{$data_fabricacao}', '{$data_validade}', '{$imagem}', '{$preco}')";
 
      $result = mysqli_query($conn, $sql);
-
+    
 
 } elseif ($tipo == 'produto') {
     $pdr = "INSERT INTO produtos (nome, fabricante, descricao, data_fabricacao, data_validade, imagem, preco)
@@ -42,7 +42,6 @@ mysqli_close($conn);
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="3;http://localhost/FARMACIA_KFBG/upload.html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="">
     <title>Confirmação de Cadastro</title>
