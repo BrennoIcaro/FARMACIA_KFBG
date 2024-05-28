@@ -15,29 +15,29 @@
         <header>
         </header>
         <main>
-          <div class="container_background">
+          <div style="background-image: url('IMG/backg_login.jpg');" class="container_background">
             <div class="container">
               <a href="index.html"><img width="170px" height="60px"  src="img/logo_farmacia.png" alt="Logo da Farmácia" class="logo"></a>
                 <h1>Cadastre-se</h1>
               <form  name="form_cad_cliente" action="cad_cliente.php" method="post">
                 <div class="mb-3">
                     <label for="exampleInputname1" class="form-label">Nome:</label><br>
-                    <input type="text" class="form-control" id="nome" name="nome" placeholder="Informe seu nome">
+                    <input type="text" class="form-control" id="nome" name="nome" placeholder="Informe seu nome" required>
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputCpf1" class="form-label">CPF:</label><br>
-                    <input type="text" class="form-control" id="cpf" name="cpf"  placeholder="Informe seu CPF">
+                    <input type="text" class="form-control" id="cpf" name="cpf"  placeholder="Informe seu CPF" required>
                   </div>
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Email:</label><br>
-                  <input type="email" class="form-control" id="email"  name="email"  placeholder="Informe seu email">
+                  <input type="email" class="form-control" id="email"  name="email"  placeholder="Informe seu email" required>
                 </div>
                 <div class="mb-3">
                   <label for="exampleInputPassword1" class="form-label">Senha:</label><br>
-                  <input type="password" class="form-control" id="senha" name="senha"  placeholder="Crie uma senha">
+                  <input type="password" class="form-control" id="senha" name="senha"  placeholder="Crie uma senha" required>
                 </div>
                 <div class="mb-3 form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
                   <label class="form-check-label" for="exampleCheck1">li e Concordo com os termos de uso</label>
                 </div>
                 <button type="submit" class="btn btn-primary">Cadastrar</button>

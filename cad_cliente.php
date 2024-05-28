@@ -19,18 +19,37 @@ mysqli_close($conn);
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="5;http://localhost/FARMACIA_KFBG/login.html">
+    <meta http-equiv="refresh" content="3;http://localhost/FARMACIA_KFBG/login.html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="">
     <title>Confirmação de Cadastro</title>
+    <style>
+        h1{
+           
+            text-align: center;
+            color: #1cd84b;
+            font-size: 30px;
+        }
+        h2{
+            
+            text-align: center;
+            color: #1cd84b;
+        }
+        
+        body{
+          background-image: linear-gradient(60deg,#152d54cd,#345d9eca);
+        }
+
+    </style>
 </head>
 <body>
     <h1>
         Cliente Cadastrado com Sucesso!
-    </h1>   
+    </h1>  
     <br>
     <h2>
-        Redirecionando para página principal ...
-    </h2>
+        Redirecionando para Login...
+    </h2> 
+   
 </body>
 </html>

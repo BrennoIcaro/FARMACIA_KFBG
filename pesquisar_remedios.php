@@ -8,15 +8,26 @@
         table {
             width: 100%;
             border-collapse: collapse;
-        
+            background: #f7fcfa;
+
         }
         th, td {
             border: 1px solid black;
             padding: 8px;
             text-align: left;
+            font-size: 20px;
+            
+        
         }
         th {
-            background-color: #f2f2f2;
+            background-image: linear-gradient(60deg,#152d54cd,#345d9eca);
+            color: white;
+        }
+
+        a{
+            font-size: 20px;
+            text-decoration: none;
+            color: blue;
         }
     </style>
 </head>
@@ -24,13 +35,13 @@
     <table>
         <thead>
         <tr>
-            <th>Nome</th>
-            <th>Fabricante</th>
-            <th>Descrição</th>
-            <th>Data de Fabricação</th>
-            <th>Data de Validade</th>
-            <th>Imagem</th>
-            <th>Preço</th>
+            <th>NOME</th>
+            <th>FABRICANTE</th>
+            <th>DESCRIÇÃO</th>
+            <th>DATA DE FABRICAÇÃO</th>
+            <th>DATA DE VALIDADE</th>
+            <th>IMAGEM</th>
+            <th>PREÇO</th>
         </tr>
         </thead>
         <tbody>
