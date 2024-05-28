@@ -39,26 +39,40 @@
 
              include("conexao.php");
 
-            $pesquisa = $_POST['pesquisa'];
+             $pesquisa = mysqli_real_escape_string($conn, $_POST['pesquisa']);
+             $tipo = $_POST['tipo'];
 
-            $resultado = "SELECT nome,fabricante,descricao,data_fabricacao,data_validade,imagem,preco
-            FROM remedios WHERE nome LIKE'%A%'";
+             if ($tipo == 'remedio') {
+                 $resultado = "SELECT nome, fabricante, descricao, data_fabricacao, data_validade, imagem, preco 
+                           FROM remedios WHERE nome LIKE '%$pesquisa%'";
 
-            $busca = mysqli_query($conn,$resultado);
+             } else if ($tipo == 'produto') {
+                 $resultado = "SELECT nome AS nome, fabricante, descricao, data_fabricacao, data_validade, imagem, preco 
+                           FROM produtos WHERE nome LIKE '%$pesquisa%'";
+             } else {
+                 echo "Erro: Tipo de item desconhecido.";
+                 exit;
+             }
 
-            while($linhas = mysqli_fetch_array($busca)){
-                echo "<tr>";
-                echo "<td>".$linhas['nome']. "</td>";
-                echo "<td>".$linhas['fabricante']. "</td>";
-                echo "<td>".$linhas['descricao']. "</td>";
-                echo "<td>".$linhas['data_fabricacao']. "</td>";
-                echo "<td>".$linhas['data_validade']. "</td>";
-                echo "<td><img src='".$linhas['imagem']."' width='75' height='75'></td>";
-                echo "<td>".$linhas['preco']. "</td>";
-                echo "</tr>";
-            }
+             $result = mysqli_query($conn, $resultado);
 
-            mysqli_close($conn);
+             if ($result) {
+                 while ($linhas = mysqli_fetch_assoc($result)) {
+                    echo "<tr>";
+                    echo "<td>".$linhas['nome']. "</td>";
+                    echo "<td>".$linhas['fabricante']. "</td>";
+                    echo "<td>".$linhas['descricao']. "</td>";
+                    echo "<td>".$linhas['data_fabricacao']. "</td>";
+                    echo "<td>".$linhas['data_validade']. "</td>";
+                    echo "<td><img src='".$linhas['imagem']."' width='75' height='75'></td>";
+                    echo "<td>".$linhas['preco']. "</td>";
+                    echo "</tr>";
+                 }
+             } else {
+                 echo "Erro ao realizar a consulta: " . mysqli_error($conn);
+             }
+
+             mysqli_close($conn);
 
                 ?>       
 
