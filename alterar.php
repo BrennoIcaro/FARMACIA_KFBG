@@ -25,9 +25,27 @@ $alterar_cliente = mysqli_query($conn, $alterar_user);
     <meta http-equiv="refresh" content="3;http://localhost/FARMACIA_KFBG/configuracoes.html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alterando Usuário</title>
+    <style>
+        h1{
+           
+           text-align: center;
+           color: #1cd84b;
+           font-size: 30px;
+       }
+       h2{
+           
+           text-align: center;
+           color: #1cd84b;
+       }
+       
+       body{
+         background-image: linear-gradient(60deg,#152d54cd,#345d9eca);
+       }
+    </style>
 </head>
 <body>
     <h1>Email e Senha Alterados com Sucesso!</h1>
-    
+    <br>
+    <h2>Redirecionando para configuracoes...</h2>
 </body>
 </html>

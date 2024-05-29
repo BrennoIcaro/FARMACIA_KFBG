@@ -4,6 +4,7 @@ $id = $_POST['id'];
 $email = $_POST['email'];
 
 
+
 $servidor = "localhost";
 $usuario = "root";
 $senha = "";
@@ -11,7 +12,7 @@ $dbname = "bd_farmacia";
 
 $conn = mysqli_connect($servidor, $usuario, $senha, $dbname);
 
-$apagar = " DELETE FROM clientes WHERE id = '$id' AND email = '$email'";
+$apagar = "DELETE FROM clientes WHERE id = '$id' AND email = '$email'";
 $delete_cliente = mysqli_query($conn,$apagar);
 
 ?>
